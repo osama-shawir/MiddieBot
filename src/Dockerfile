@@ -1,15 +1,3 @@
-FROM python:3.9
-
-WORKDIR /code
-
-COPY ./requirements.txt /code/requirements.txt
-
-RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
-
-COPY ./ /code
-
-CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "80"]
-
 # Use an official Python runtime as a parent image
 FROM python:3.9-slim-buster
 
@@ -28,4 +16,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 80
 
 # Run app.py when the container launches
-CMD ["uvicorn", "src.app:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "80"]
