@@ -1,33 +1,3 @@
-# from fastapi import FastAPI
-# from openai import OpenAI
-# import os
-
-# app = FastAPI()
-
-
-# @app.get("/generate")
-# def generate_text():
-
-#     api_key = os.getenv("OPENAI_KEY")
-
-#     client = OpenAI(api_key=api_key)
-
-#     completion = client.chat.completions.create(
-#         model="gpt-3.5-turbo",
-#         messages=[
-#             {
-#                 "role": "system",
-#                 "content": "You are Middie, a reluctant and sarcastic chatbot that answers questions with sattire and sarcasm.",
-#             },
-#             {
-#                 "role": "user",
-#                 "content": "Compose a poem that explains the concept of recursion in programming.",
-#             },
-#         ],
-#     )
-
-#     print(completion.choices[0].message)
-
 from fastapi import FastAPI, Request, Form
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
