@@ -1,3 +1,5 @@
+on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -6,5 +8,6 @@ jobs:
       uses: actions/checkout@v2
     - name: Run app
       run: python app.py
+      working-directory: src
       env:
         OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
