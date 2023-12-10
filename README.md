@@ -6,7 +6,7 @@
 
 Middie is a sarcastic chatbot powered by FastAPI and GPT 3.5 Turbo. It answers questions in an informative yet sarcastic manner, adding a touch of humor to interactions. This project provides an easily scalable solution, deployed as a containerized application on Azure App Services. You can access the live application [here](https://sarcasticbot.azurewebsites.net/). 
 
-A youtube demo of the application can also be found at:
+A youtube demo of the application can also be found below:
 
 [![Middie - Sarcastic Chatbot Youtube Demo](http://img.youtube.com/vi/Zfz099_cZvo/0.jpg)](https://youtu.be/Zfz099_cZvo "Middie - Sarcastic Chatbot Youtube Demo")
 
