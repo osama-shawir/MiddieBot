@@ -1,8 +1,10 @@
+[![.github/workflows/main.yaml](https://github.com/osama-shawir/OpenAIWebApp/actions/workflows/main.yaml/badge.svg)](https://github.com/osama-shawir/OpenAIWebApp/actions/workflows/main.yaml)
+
 # Middie - Sarcastic Chatbot with FastAPI and GPT 3.5 Turbo
 
 ## Project Overview
 
-Middie is a sarcastic chatbot powered by FastAPI and GPT 3.5 Turbo. It answers questions in an informative yet sarcastic manner, adding a touch of humor to interactions. This project provides an easily scalable solution, deployed as a containerized application on Azure App Services.
+Middie is a sarcastic chatbot powered by FastAPI and GPT 3.5 Turbo. It answers questions in an informative yet sarcastic manner, adding a touch of humor to interactions. This project provides an easily scalable solution, deployed as a containerized application on Azure App Services. You can access the live application [here](https://sarcasticbot.azurewebsites.net/).
 
 ## Requirements
 
@@ -23,21 +25,21 @@ This project is built around several core components:
 
 2. **GPT 3.5 Turbo**: This is an advanced language model developed by OpenAI. It's used to generate the chatbot's responses. It's capable of understanding context, generating creative responses, and even exhibiting a bit of sarcasm.
 
-![Alt text](image.png)
+![Alt text](imgs/image.png)
 
 3. **Docker**: Docker is a platform that allows us to containerize our application. This means we can package our application along with all its dependencies into a single object called a container. This container can then be easily deployed on any system that has Docker installed, ensuring that our application will run the same way regardless of the underlying system.
 
-![Alt text](image-1.png)
+![Alt text](imgs/image-1.png)
 
 5. **Azure CLI and Azure App Services**: These are tools provided by Microsoft Azure. The Azure CLI is a command-line tool designed to manage Azure services. Azure App Services is a fully managed platform for building, deploying, and scaling web apps. We use these to deploy our containerized application to the cloud as an Azure Web App.
 
-![Alt text](image-2.png)
+![Alt text](imgs/image-2.png)
 
 6. **Azure Account**: An Azure account is required to access and use Azure services. This is where our application will be hosted.
 
 7. **Security and Robustness**: The project is designed with a strong focus on security. Sensitive information such as keys are not stored in the source files, which could compromise them. Instead, they are stored as environment variables on Azure. This approach not only enhances security but also makes the application more robust, as it reduces the risk of sensitive data being accidentally exposed or leaked.
 
-![Alt text](image-4.png)
+![Alt text](imgs/image-4.png)
 
 8.  **Makefile**: The Makefile is a tool that automates the build process, managing dependencies and executing tasks such as installing requirements, linting code, running tests, and compiling the application.
 
@@ -47,7 +49,7 @@ This project is built around several core components:
 
 11. **JavaScript and CSS**: Used for front-end interactivity and styling.
 
-![Alt text](image-5.png)
+![Alt text](imgs/image-5.png)
 
 12. **HTML**: Used for structuring the front-end of the application.
 
@@ -58,7 +60,7 @@ This project is highly practical and offers several advantages:
 
 1. **Scalability**: One of the key strengths of this project is its ability to dynamically scale to accommodate any number of users. This is made possible by the use of Docker and cloud deployment, which can easily be scaled up or down based on demand.
 
-![Alt text](image-3.png)
+![Alt text](imgs/image-3.png)
 
 2. **Consistency**: By using Docker, we ensure that the application runs the same way regardless of the environment. This eliminates the "it works on my machine" problem and makes deployment more reliable.
 
